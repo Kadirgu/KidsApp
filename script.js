@@ -38,4 +38,8 @@ title.onmousedown = changeColor;
 title.onmouseup = returnColor;
 character.onmousedown = refreshQuestion;
 character2.onmousedown = refreshQuestion2;
-title.onclick = restart;
+title.onclick = setTimeout;
+
+setTimeout(function () {
+    window.location.reload(1);
+}, 10000);
